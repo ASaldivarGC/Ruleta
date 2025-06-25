@@ -463,7 +463,7 @@
                 div.className = 'name-input-group';
                 div.innerHTML = `
                     <span>${i + 1}.</span>
-                    <input type="text" id="name-${i}" placeholder="Participant Name" class="input-field">
+                    <input type="text" id="name-${i}" placeholder="Nombre" class="input-field">
                 `;
                 dynamicNameFields.appendChild(div);
             }
@@ -495,7 +495,7 @@
             }
 
             if (!allNamesValid) {
-                showMessageBox("Please fill in all participant names.");
+                showMessageBox("Favor de llenar todos los nombres.");
                 return;
             }
 
